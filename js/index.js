@@ -28,4 +28,13 @@ function getname{
     var male=["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
     var female=["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
     var mydate=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+
+
+    if(getgender()===male){
+        alert("your Akan name depending on your date of birth is"+male [getDay(name).value]+"since you were Born on"+myDate(getDay(name)));
+    }
+    else if(getgender()===female){
+        alert("your Akan name depending on your date of birth is"+female [getDay(name).value]+"since you were Born on"+myDate(getDay(name)));
+    }
+    else{alert("check your data");}
 }
