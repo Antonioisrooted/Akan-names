@@ -6,7 +6,8 @@ function getDay(name){
     var date= parseInt(Document.getElementById("date").value);
 
 
-    if(year= "" || month<1 || month>12 || month= "" || date <1 || date >31 ){
+    if(year= "" || month<1 || month>12 || month = "" || date <1 || date >31);
+    {
         alert ("Invalid input dear, kindly check the information filled in.")
     }
 
@@ -27,7 +28,7 @@ function getGender(){
 }
 
 
-function getname{
+function getname(){
     var male=["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
     var female=["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
     var mydate=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
@@ -39,5 +40,6 @@ function getname{
     else if(getgender()===female){
         alert("your Akan name depending on your date of birth is"+female [getDay(name).value]+"since you were Born on"+myDate(getDay(name)));
     }
-    else{alert("check your data");}
+    else{alert("check your data");
+    }
 }
