@@ -37,27 +37,27 @@
                 <div class="col-md-4 col-sm-4 col-xs-12">
                     <form class="form-container">
                         <div class="form-group">
-                            <label for="exampleInputBirthday"><b>Year</b></label>
+                            <label for="exampleInputYear"><b>Year</b></label>
                             <input type="number" class="form-control" id="year" placeholder="Enter year" required min=1 maxlength="4">
     
-                            <label for="exampleInputBirthday"><b>Month</b></label>
+                            <label for="exampleInputMonth"><b>Month</b></label>
                             <input type="number" class="form-control" id="month" placeholder="Enter month as a number" required min=1 max=12>
                             
-                            <label for="exampleInputBirthday"><b>Date</b></label>
+                            <label for="exampleInputDate"><b>Date</b></label>
                             <input type="number" class="form-control" id="date" placeholder="Enter date" required min=1 max=31>
                         </div>
                         <div class="form-group">
                             <h3>Gender</h3>
                             <label for="exampleInputGender">Male</label>
-                            <input type="radio" class="form-control" id="male" placeholder="male">
+                            <input type="radio" class="form-control" id="gender" placeholder="boyChild">
                             <label for="exampleInputGender">Female</label>
-                            <input type="radio" class="form-control" id="female" placeholder="female">
+                            <input type="radio" class="form-control" id="gender" placeholder="girlChild">
                         </div>
                         <div class="checkbox">
                             <label>
                                 <input type="checkbox">Check me out</label>
                         </div>
-                        <button type="submit" class="btn btn-success btn-block">Submit</button>
+                        <button type="submit" class="btn btn-success btn-block" onclick="getDay()">Submit</button>
                     </form>
                 </div>
                 <div class="col-md-4 col-sm-4 col-xs-12"></div>
