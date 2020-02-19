@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/index.js"></script>
+    <title>Check your Akan name</title>
+</head>
+<body>
+    <!--Navigation bar-->
+    <div class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon">
+                </span>
+            </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="form.html">Check your Akan name</a>
+                </li>
+            </ul>
+
+        </div>
+        </div>
+    </div>
+    <!--Jumbotron-->
+    <div class="container">
+        <div class="container-fluid bg">
+            <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-12"></div>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <form class="form-container">
+                        <div class="form-group">
+            <div class="form-group top-form">
+            <label for="century" class="labels">Century</label>
+            <input type="number" class="form-control" placeholder="Enter your current century" id="century" required  min="0" max="30">
+          </div>
+          <div class="form-group">
+            <label for="year" class="labels">Year</label>
+            <input type="number" placeholder="Enter the year" class="form-control" id="year" required min="0" max="100">
+          </div>
+          <div class="form-group">
+            <label for="month" class="labels">Month</label>
+            <input type="number" class="form-control" placeholder="Enter the month of the year" id="month" required min="0" max="12">
+          </div>
+          <div class="form-group">
+            <label for="monthDay" class="labels">Day of month</label>
+            <input type="number" placeholder="Enter the day of the month" class="form-control" id="monthday" required min="0" max="12">
+          </div>
+          <form class="radio-button">
+            <input type="radio" class="genders labels" value="male" id="rad1" name="rads" required>Male
+            <br>
+            <input type="radio" class="genders labels" value="female" id="rad1" name="rads" required>Female
+          </form>
+          <br>
+          <a href="#result"><button type="button" name="button" class="btn btn-primary mb-2" onclick="checkDayOfWeek();">Calculate Birthday</button></a>
+          <h1 id="result"></h1>
+
+                    </form>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12"></div>
+            </div>
+            </div>
+        </div> 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> 
+<script src="index.js"></script>
+</body>
+</html>
