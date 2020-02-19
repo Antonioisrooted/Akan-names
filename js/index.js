@@ -1,6 +1,6 @@
 
-  var century, year, month, dayOfMonth, dayOfWeek, day;
-//Get input
+var century, year, month, dayOfMonth, dayOfWeek, day;
+//To get input
 function getInput(){
   century = parseInt(document.getElementById("century").value);
   year = parseInt(document.getElementById("year").value);
@@ -20,11 +20,11 @@ function getInput(){
     return false;
   }
 }
-//Calculate func
+
 function calculateDay(){
     getInput();
     dayOfWeek = ((((century/4) -2*century-1) + ((5*year/4) ) + ((26*(month+1)/10)) + dayOfMonth) % 7) -1;
-    console.log(dayOfWeek); //Test the calculateDay function
+    console.log(dayOfWeek); 
     return (Math.floor(dayOfWeek));
     if (dayOfWeek < 0) {
       dayOfWeek = dayOfWeek * -1;
