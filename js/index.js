@@ -23,7 +23,7 @@ function getInput(){
 
 function calculateDay(){
     getInput();
-    dayOfWeek = ((((century/4) -2*century-1) + ((5*year/4) ) + ((26*(month+1)/10)) + dayOfMonth) % 7) -1;
+    dayOfWeek = ((((century/4) -2*century-1) + ((5*year/4) ) + ((26*(month+1)/10)) + dayOfMonth) % 7);
     console.log(dayOfWeek); 
     return (Math.floor(dayOfWeek));
     if (dayOfWeek < 0) {
@@ -53,25 +53,25 @@ function checkGender(){
         case gender = "male":
               switch(day){
                 case (0 || -0):
-                  alert ("The day is on a sunday." + "  " + "Your akan name is " + maleNames[0]);
+                  alert ("You were born on a sunday." + "  " + "Your akan name is " + maleNames[0]);
                 break;
                 case (1 || -1):
-                  alert ("The day is on a monday." + " " + "Your akan name is " + maleNames[1]);
+                  alert ("You were born on a monday." + " " + "Your akan name is " + maleNames[1]);
                 break;
                 case (2 || -2):
-                    alert ("The day is on a tuesday." + " " + "Your akan name is " + maleNames[2]);
+                    alert ("You were born on a tuesday." + " " + "Your akan name is " + maleNames[2]);
                 break;
                 case (3 || -3):
-                  alert ("The day is on a wednesday." + " " + "Your akan name is "+ maleNames[3]);
+                  alert ("You were born on a wednesday." + " " + "Your akan name is "+ maleNames[3]);
                 break;
                 case (4 || -4):
-                  alert ("The day is on a thursday." + " " + "Your akan name is " + maleNames[4]);
+                  alert ("You were born on a thursday." + " " + "Your akan name is " + maleNames[4]);
                 break;
                 case (5 || -5):
-                  alert ("The day is on a friday." + " " + "Your akan name is " + maleNames[5]);
+                  alert ("You were born on a friday." + " " + "Your akan name is " + maleNames[5]);
                 break;
                 case (6 || -6):
-                  alert ("The day is on a saturday." + " " + "Your akan name is " + maleNames[6]);
+                  alert ("You were born on a saturday." + " " + "Your akan name is " + maleNames[6]);
               }
         break;
         case gender = "female":
